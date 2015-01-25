@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TAKViewController : UIViewController
+@interface TAKViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
+
+@property (weak, nonatomic) IBOutlet UITableView *tblNews;
+- (IBAction)removeDataFile:(id)sender;
 
 @end

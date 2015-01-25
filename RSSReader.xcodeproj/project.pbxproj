@@ -21,6 +21,7 @@
 		22FA67C01A749C9B0019CC32 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22FA67A21A749C9B0019CC32 /* UIKit.framework */; };
 		22FA67C81A749C9B0019CC32 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 22FA67C61A749C9B0019CC32 /* InfoPlist.strings */; };
 		22FA67CA1A749C9B0019CC32 /* RSSReaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FA67C91A749C9B0019CC32 /* RSSReaderTests.m */; };
+		22FA67D41A749CC80019CC32 /* XMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FA67D31A749CC80019CC32 /* XMLParser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		22FA67C51A749C9B0019CC32 /* RSSReaderTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RSSReaderTests-Info.plist"; sourceTree = "<group>"; };
 		22FA67C71A749C9B0019CC32 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		22FA67C91A749C9B0019CC32 /* RSSReaderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSSReaderTests.m; sourceTree = "<group>"; };
+		22FA67D31A749CC80019CC32 /* XMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLParser.m; sourceTree = "<group>"; };
+		22FA67D51A749CD10019CC32 /* XMLParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMLParser.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +115,8 @@
 		22FA67A41A749C9B0019CC32 /* RSSReader */ = {
 			isa = PBXGroup;
 			children = (
+				22FA67D51A749CD10019CC32 /* XMLParser.h */,
+				22FA67D31A749CC80019CC32 /* XMLParser.m */,
 				22FA67AD1A749C9B0019CC32 /* TAKAppDelegate.h */,
 				22FA67AE1A749C9B0019CC32 /* TAKAppDelegate.m */,
 				22FA67B01A749C9B0019CC32 /* Main.storyboard */,
@@ -200,6 +205,13 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = tak;
 				TargetAttributes = {
+					22FA679A1A749C9B0019CC32 = {
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+						};
+					};
 					22FA67BB1A749C9B0019CC32 = {
 						TestTargetID = 22FA679A1A749C9B0019CC32;
 					};
@@ -250,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22FA67D41A749CC80019CC32 /* XMLParser.m in Sources */,
 				22FA67AB1A749C9B0019CC32 /* main.m in Sources */,
 				22FA67B51A749C9B0019CC32 /* TAKViewController.m in Sources */,
 				22FA67AF1A749C9B0019CC32 /* TAKAppDelegate.m in Sources */,
